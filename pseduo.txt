@@ -1,0 +1,15 @@
+Game is Hangman 
+
+1. A word needs to be picked from an assortment of random words 
+2. The word needs to be stored to be refereed back to in order to check for matches. 
+2. The user needs access to all the letters in the alphabet
+3. When the user clicks on a letter the letter will be checked against the letters in the stored word. 
+4. If the letter is correct the 0 points will be added to the score , letter is unusable again and letter get writen in all appropriate spaces to spell out word. 
+5. If the letter is not correct the user will earn a point to the score , the letter is unusable. 
+6. If the user get 6 points then they lose the game. 
+
+
+
+Future 
+1. Option to guess the name of the word. 
+2. Age level or Difficulty 
