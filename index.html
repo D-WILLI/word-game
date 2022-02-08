@@ -12,39 +12,30 @@
 
         <main>
 
-            <section id="display-word">
-                
+            <section>
+                <button id="start-game"> Start </button>
+                <button id="hint-button"> Hint </button>
             </section>
 
-            <section id="letter-buttons">
-                <button id="letter-a">A</button>
-                <button id="letter-b">B</button>    
-                <button id="letter-c">C</button>    
-                <button id="letter-d">D</button>    
-                <button id="letter-e">E</button>    
-                <button id="letter-f">F</button>    
-                <button id="letter-g">G</button>    
-                <button id="letter-h">H</button>    
-                <button id="letter-i">I</button>    
-                <button id="letter-j">J</button>    
-                <button id="letter-k">K</button>    
-                <button id="letter-l">L</button>
-                <button id="letter-m">M</button>
-                <button id="letter-n">N</button>    
-                <button id="letter-o">O</button>    
-                <button id="letter-p">P</button>    
-                <button id="letter-q">Q</button>    
-                <button id="letter-r">R</button>    
-                <button id="letter-s">S</button>    
-                <button id="letter-t">T</button>
-                <button id="letter-u">U</button>    
-                <button id="letter-v">V</button>    
-                <button id="letter-w">W</button>    
-                <button id="letter-x">X</button>    
-                <button id="letter-y">Y</button>    
-                <button id="letter-z">Z</button>  
+            <section id="display-word">
+                <p id="wrong-letters">
+
+                </p>
+            </section>
+
+            <section id="letter-guesser">
+                <form>
+                    <div>
+                      <label for="example">Please Enter in Your 1 Letter Guess </label>
+                      <input id="example" type="text" name="text">
+                    </div>
+                    <div>
+                      <input type="submit" value="Guess?">
+                    </div>
+                  </form>
             </section>
 
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
