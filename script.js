@@ -3,14 +3,25 @@ var startButton = document.getElementById('start-game');
 var newWord=""; 
 var gameWord = []; 
 var letterGuess = document.getElementById('letter-guesser')
-// this button allows a hint to pulled from dictionary API 
-hintButton.addEventListener("click", () => {
-getHint();
-})
+var submitButton = document.getElementById('guess-button') 
+// var guessValue = document.getElementById("letter-guess").value;
 
+
+
+
+// EVENT LISTENERS 
 startButton.addEventListener("click", () => {
     getWord();
-    })
+})
+
+
+hintButton.addEventListener("click", () => {
+    getHint();
+})
+
+
+
+
 
 var dictonaryApi = 'c55c560c-197c-4962-b9ad-d78300ec86b1'
 
@@ -32,7 +43,16 @@ function getWord(data,gameWord){
     function playGame(){
         console.log('play game');
         console.log(gameWord.length); 
-        
+        console.log(guessValue); 
+
+
+        var guessValue= document.getElementById("letter-guess")
+
+    function getAnswer(event){
+        event.preventDefault(); 
+        guessValue.addEventListener("submit", getAnswer); 
+        console.log(guessValue); 
+}
 
         for (i=0; i<gameWord.length; i++){
             if (letterGuess === gameWord[i]){
@@ -43,8 +63,18 @@ function getWord(data,gameWord){
 }
 
 
-   
+    
 }
+
+
+    // var form = document.getElementById("myForm");
+// function handleForm(event) { event.preventDefault(); } 
+// form.addEventListener('submit', handleForm);
+
+// }
+
+   
+// }
 
 
 
@@ -79,3 +109,13 @@ function getHint(){
 
 
 
+// $('guess-button"').on('click', function(event){
+//     event.preventDefault();
+//     letterGuess = $("letter-guess").val();
+//     console.log(letterGuess); 
+//     // document.getElementById('display').style.display = 'block';
+
+//     getWord(letterGuess); 
+    
+    
+// });
